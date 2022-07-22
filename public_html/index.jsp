@@ -1,2 +1,5 @@
- 안녕하세요 임기돈입니다.
-감사합니다. 대표님
+<%@ page contentType="text/html; charset=utf-8" %><%@ page import="malgnsoft.util.*" %><%
+
+response.sendRedirect("main/index.jsp");
+
+%>
