@@ -1,0 +1,7 @@
+/.idea/
+config.xml
+resin-web.xml
+web.xml
+/public_html/data
+/public_html/WEB-INF/logs
+/public_html/WEB-INF/work
