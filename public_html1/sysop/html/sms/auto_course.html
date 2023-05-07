@@ -1,0 +1,130 @@
+<div class="tabs_02">
+	<ul>
+		<li class='{{tab_modify}}'><a href="../sms/auto_modify.jsp?id={{aid}}">학습독려 정보</a></li>
+		<li class='{{tab_course}}'><a href="../sms/auto_course.jsp?aid={{aid}}">과정목록</a></li>
+	</ul>
+</div>
+
+
+
+<table class="a_tb01" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td class="a_th01">{{list_total}}</td>
+	<td class="a_td01">
+		<button type="button" class="bttn2" onclick="delCourse()">선택삭제</button>
+		<button type="button" class="bttn2 sky" onclick="OpenWindows('../course/course_select.jsp?mode=auto&aid={{aid}}', '', 1000, 700);">과정추가</button>
+	</td>
+</tr>
+</table>
+
+
+<form name="form2" method="post">
+<input type="hidden" name="mode" value="sort">
+<input type="hidden" name="crid" value="">
+
+<table class="l_tb01" cellpadding="0" cellspacing="0" style="table-layout:fixed">
+<colgroup>
+<col width="50">
+<col width="70">
+<col width="60">
+<col>
+<col width="180">
+<col width="70">
+<col width="50">
+<col width="70">
+<col width="30">
+</colgroup>
+<thead>
+<tr align="center">
+	<td class="l_th01">No</td>
+	<td class="l_th01"><span class="l_sort01" id="CL_a.id" onclick="ListSort(this, '{{ord}}')">과정ID</span></td>
+	<td class="l_th01"><span class="l_sort01" id="CL_a.onoff_type" onclick="ListSort(this, '{{ord}}')">구분</span></td>
+	<td class="l_th01"><span class="l_sort01" id="CL_a.course_nm" onclick="ListSort(this, '{{ord}}')">과정명</span></td>
+	<td class="l_th01"><span class="l_sort01" id="CL_a.request_sdate" onclick="ListSort(this, '{{ord}}')">기간</span></td>
+	<td class="l_th01"><span class="l_sort01" id="CL_user_cnt" onclick="ListSort(this, '{{ord}}')">수강생</span></td>
+	<td class="l_th01"><span class="l_sort01" id="CL_a.display_yn" onclick="ListSort(this, '{{ord}}')">노출</span></td>
+	<td class="l_th01">삭제</td>
+	<td class="l_th01"><input type="checkbox" onclick="AutoCheck('form2', 'idx')"></td>
+</tr>
+</thead>
+<tbody>
+<!--@loop(list)-->
+<tr class="l_tr_{{list.ROW_CLASS}}" align="center">
+	<td class="l_td01">{{list.__ord}}</td>
+	<td class="l_td01">{{list.id}}</td>
+	<td class="l_td01"><span class="label">{{list.onoff_type_conv}}</span></td>
+	<td class="l_td01" align="left" title="{{list.course_nm}}">
+		<p class="fontsmall status gray">[{{list.cate_name}}]</p>
+		<div style="float:left;margin-top:4px;">{{list.course_nm_conv}}</div>
+	</td>
+	<td class="l_td01">
+		<!--@if(list.regular_block)-->
+		<div>신청 : {{list.request_sdate_conv}} - {{list.request_edate_conv}}</div>
+		<!--@nif(list.package_block)-->
+		<div style="margin-top:3px; color:#4C5BA9">학습 : {{list.study_sdate_conv}} - {{list.study_edate_conv}}</div>
+		<!--/nif(list.package_block)-->
+		<!--/if(list.regular_block)-->
+
+		<!--@if(list.alltimes_block)-->상시<!--/if(list.alltimes_block)-->
+	</td>
+	<td class="l_td01">{{list.user_cnt_conv}}명</td>
+	<td class="l_td01"><span class="label">{{list.display_yn_conv}}</span></td>
+	<td class="l_td01">
+		<input type="button" class="btn_simp" value="삭제" onclick="BtnConfirmGo(this, 'auto_course.jsp?mode=del&crid={{list.id}}&aid={{aid}}');">
+	</td>
+	<td class="l_td01"><input type="checkbox" name="idx" value="{{list.id}}" userid="{{list.user_id}}"></td>
+</tr>
+<!--/loop(list)-->
+</tbody>
+</table>
+
+<!--@nif(list)-->
+<table class="n_tb01" cellpadding="0" cellspacing="0">
+<tr>
+	<td>해당 자료가 없습니다.</td>
+</tr>
+</table>
+<!--/nif(list)-->
+
+<table class="p_tb01" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="p_td01">{{pagebar}}</td>
+	</tr>
+</table>
+</form>
+
+<script>
+// function delCourse() {
+// 	if(!GetFormValue("form2", "idx")) {
+// 		alert("선택된 과정이 없습니다.");
+// 		return;
+// 	}
+// 	if(!confirm("선택한 과정을 삭제하시겠습니까?")) return;
+// 	location.href = "course_lesson.jsp?mode=del&idx=" + GetFormValue("form2", "idx") + "&sidx=" + GetFormValue("form1", "section_idx") + "&{{query}}";
+// }
+
+function delCourse() {
+	var idx = GetFormValue("form2", "idx");
+	if(!idx) {
+		alert('삭제할 과정을 선택해 주세요.');
+	} else if(confirm("선택한 과정을 삭제하시겠습니까?")) {
+		var f = document.forms['form2'];
+		f['mode'].value = "mdel";
+		f['crid'].value = idx;
+		f.submit();
+	}
+}
+
+function setLabel() {
+	var progresses = { "보임" : "blue", "숨김" : "gray", "온라인" : "sky", "집합" : "red", "혼합" : "green", "패키지" : "brown", "사업주지원" : "green", "내일배움카드" : "orange", "상시 과정" : "gray", "정상": "blue", "중지" : "gray" };
+	$(".label").each(function() {
+		var v = $(this).html();
+		$(this).addClass(progresses[v]);
+	});
+}
+addEvent("onload", function() { setLabel(); });
+
+function setItem(id, nm) {
+	location.href = '../sms/auto_course.jsp?{{query}}&mode=add&crid=' + id;
+}
+</script>

@@ -1,0 +1,31 @@
+<form name="form1" method="post" target="sysfrm" onsubmit="return goSubmit(this);">
+<input type="hidden" name="ord" value="{{ord}}">
+<input type="hidden" name="mode" value="{{mode}}">
+<input type="hidden" name="cid" value="{{cid}}">
+<input type="hidden" name="mode" value="">
+<table class="f_tb01" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="f_th01">사유</td>
+        <td class="f_td01" colspan="3"><input type="text" name="action_reason" style="width:100%" /></td>
+    </tr>
+</table>
+
+<table class="b_tb01" border="0">
+    <tr>
+        <td>
+            <button type="button" class="bttn2" onclick="parent.CloseLayer();">취소</button>
+        </td>
+        <td class="b_td01">
+            <button type="submit" class="bttn2">수정</button>
+        </td>
+    </tr>
+</table>
+
+</form>
+{{form_script}}
+
+<script language="javascript">
+function goSubmit(f) {
+
+}
+</script>

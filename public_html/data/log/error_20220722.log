@@ -1,0 +1,80 @@
+[2022-07-22 16:37:30] at /main/index.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:37:30] at /main/index.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:37:31] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:37:31] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:37:31] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:37:31] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:37:31] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:37:31] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:27] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:27] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:27] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:27] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:27] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:27] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:29] at /main/index.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:29] at /main/index.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:30] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:30] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:30] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:30] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:39:30] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:39:30] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:40:38] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:40:38] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:40:38] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:40:38] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:40:38] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:40:38] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:40:40] at /main/index.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:40:40] at /main/index.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:44:21] at /main/index.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:44:21] at /main/index.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:44:22] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:44:22] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:44:22] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:44:22] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:44:22] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:44:22] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2022-07-22 16:46:00] at /main/index.jsp
+{DataSource.jndi} jdbc/malgn (jdbc/malgn)
+[2022-07-22 16:46:00] at /main/index.jsp
+{DB.getConnection} null (null)

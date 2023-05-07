@@ -1,0 +1,16 @@
+SMAP
+_post_0insert__jsp.java
+JSP
+*S JSP
+*F
++ 1 post_insert.jsp
+post/post_insert.jsp
++ 2 init.jsp
+post/../init.jsp
+*L
+1#1:37
+1#2,12:38
+1#1:50,2
+1#1:52,36
+37#1:87,2
+*E

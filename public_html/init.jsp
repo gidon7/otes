@@ -2,6 +2,7 @@
 
 //객체
 Malgn m = new Malgn(request, response, out);
+SessionDao mSession = new SessionDao(request, response);
 
 Form f = new Form("form1");
 try { f.setRequest(request); }
@@ -20,28 +21,29 @@ String userEmail = "";
 String userType = "";
 String sysToday = m.time("yyyyMMdd");
 String sysNow = m.time("yyyyMMddHHmmss");
+String userSessionId = null;
 boolean loginBlock = false;
 
 //로그인 여부 체크
 Auth auth = new Auth(request, response);
-auth.loginURL = "/member/login.jsp";
-auth.keyName = "ENTER2022";
+auth.loginURL = "/main/login.jsp";
+auth.keyName = "gidon";
 
 if(auth.isValid()) {
-    userId = auth.getInt("USERID");
+    userId = auth.getInt("ID");
     loginId = auth.getString("LOGINID");
     userName = auth.getString("USERNAME");
     userEmail = auth.getString("EMAIL");
     userType = auth.getString("TYPE");
-    loginBlock = true;
+
+    userSessionId = auth.getString("SESSIONID");
 }
 
-p.setVar("login_block", loginBlock);
-p.setVar("SYS_TITLE", "<ENTER \"_\"> 오픈 더 이러닝사이트!");
 p.setVar("SYS_LOGINID", loginId);
 p.setVar("SYS_USERNAME", userName);
 p.setVar("SYS_USEREMAIL", userEmail);
 p.setVar("SYS_USERKIND", userType);
 p.setVar("SYS_TODAY", sysToday);
 p.setVar("SYS_NOW", sysNow);
+
 %>

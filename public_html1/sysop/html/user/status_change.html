@@ -1,0 +1,45 @@
+<form name="form1" method="post" target="sysfrm" onsubmit="return goSubmit(this);">
+<table class="f_tb01" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="f_th01">회원상태</td>
+        <td class="f_td01">
+            <label><input type="radio" name="status" class="ipt01" value="1" /> 정상 </label> &nbsp;
+            <label><input type="radio" name="status" class="ipt01" value="0" onclick="alertStatus();" /> 중지 </label> &nbsp;
+            <span class="desc01">중지 상태의 회원은 로그인 할 수 없습니다.</span>
+        </td>
+    </tr>
+</table>
+
+<table class="b_tb01" border="0">
+    <tr>
+        <td>
+            <button type="button" class="bttn2" onclick="parent.CloseLayer();">취소</button>
+        </td>
+        <td class="b_td01">
+            <button type="submit" class="bttn2">변경하기</button>
+        </td>
+    </tr>
+</table>
+
+</form>
+{{form_script}}
+
+<script language="javascript">
+function alertStatus() {
+    alert("중지 상태의 회원은 로그인 할 수 없습니다.");
+}
+
+function goSubmit(f) {
+    if (f["status"][1].checked) {
+        if (confirm("중지 상태의 회원은 로그인이 불가능하며\n사이트 접속이 제한됩니다.\n\n착오가 있을 경우 정상으로 복구할 수 있습니다.\n\n중지 상태를 변경하시겠습니까?")) {
+            if (!validate(f)) return false;
+            return true;
+        } else {
+            return false;
+        }
+    }else {
+        if (!validate(f)) return false;
+        return true;
+    }
+}
+</script>

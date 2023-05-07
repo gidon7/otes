@@ -1,0 +1,60 @@
+[2023-03-20 18:12:59] at /main/index.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:12:59] at /main/index.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:05] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:05] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:08] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:08] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:16] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:16] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:19] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:19] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:27] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:27] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:27] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:27] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:13:27] at /course/course_0list.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:13:27] at /course/course_0list.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:15:03] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:15:03] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:15:04] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:15:04] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:15:08] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:15:08] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:15:13] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:15:13] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:15:16] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:15:16] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:17:40] at /sysop/main/login.jsp
+{DataSource.jndi} jdbc/igd (jdbc/igd)
+[2023-03-20 18:17:40] at /sysop/main/login.jsp
+{DB.getConnection} null (null)
+[2023-03-20 18:18:59] at /sysop/main/login.jsp
+{DB.query} SELECT * FROM TB_USER WHERE login_id = 'malgn' AND user_type IN ('A', 'S') => Unknown column 'user_type' in 'where clause' (Unknown column 'user_type' in 'where clause')
+[2023-03-20 18:19:04] at /sysop/main/login.jsp
+{DB.query} SELECT * FROM TB_USER WHERE login_id = 'malgn' AND user_type IN ('A', 'S') => Unknown column 'user_type' in 'where clause' (Unknown column 'user_type' in 'where clause')

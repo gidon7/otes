@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:41:28 +0900] "GET / HTTP/1.1" 404 184 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:41:29 +0900] "GET /favicon.ico HTTP/1.1" 404 195 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:44:03 +0900] "GET / HTTP/1.1" 404 184 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:44:04 +0900] "GET / HTTP/1.1" 404 184 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:44:05 +0900] "GET /favicon.ico HTTP/1.1" 404 195 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:44:39 +0900] "GET / HTTP/1.1" 404 184 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [05/Jul/2022:13:46:24 +0900] "GET / HTTP/1.1" 404 184 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"

@@ -1,0 +1,14 @@
+SMAP
+_logintest__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+init.jsp
++ 2 logintest.jsp
+testing/main/logintest.jsp
+*L
+1#1,221:37
+1#2,12:258
+12#2,2:270
+*E

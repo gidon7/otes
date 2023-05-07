@@ -1,0 +1,17 @@
+SMAP
+_webtv_0recent_0list__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+main/../init.jsp
++ 2 init.jsp
+main/init.jsp
++ 3 webtv_recent_list.jsp
+main/webtv_recent_list.jsp
+*L
+1#1,221:37
+1#2,5:258
+1#3,85:263
+85#3:348
+*E

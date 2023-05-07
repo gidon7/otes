@@ -27,8 +27,8 @@ public class UserLoginDao extends DataObject{
         return isMobile;
     }
 
-    public String getDeviceType(String agent) {
-        if(this.isMobile(agent)) return "Mobile";
-        else return "PC";
-    }
+//    public String getDeviceType(String agent) {
+//        if(this.isMobile(agent)) return "Mobile";
+//        else return "PC";
+//    }
 }

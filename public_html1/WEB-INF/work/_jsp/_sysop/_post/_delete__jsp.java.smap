@@ -1,0 +1,17 @@
+SMAP
+_delete__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+sysop/post/../init.jsp
++ 2 init.jsp
+sysop/post/init.jsp
++ 3 delete.jsp
+sysop/post/delete.jsp
+*L
+1#1,184:37
+1#2,5:221
+1#3,25:226
+25#3:251
+*E

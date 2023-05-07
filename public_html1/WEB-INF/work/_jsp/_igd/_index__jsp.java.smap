@@ -1,0 +1,14 @@
+SMAP
+_index__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+init.jsp
++ 2 index.jsp
+igd/index.jsp
+*L
+1#1,221:37
+1#2,8:258
+8#2,2:266
+*E

@@ -1,0 +1,14 @@
+SMAP
+_post_0modify__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+post/../init.jsp
++ 2 post_modify.jsp
+post/post_modify.jsp
+*L
+1#1,12:37
+1#2,42:49
+42#2:91
+*E

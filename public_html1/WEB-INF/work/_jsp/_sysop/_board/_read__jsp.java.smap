@@ -1,0 +1,17 @@
+SMAP
+_read__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+sysop/board/../init.jsp
++ 2 init.jsp
+sysop/board/init.jsp
++ 3 read.jsp
+sysop/board/read.jsp
+*L
+1#1,163:37
+1#2,44:200
+1#3,121:244
+121#3:365
+*E

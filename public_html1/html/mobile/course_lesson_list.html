@@ -1,0 +1,51 @@
+<div id="container">
+    <div class="page_title">
+        <h3 class="title">내 화상강의</h3>
+    </div>
+    <div class="content">
+        <!--탭공간 e-->
+        <div class="tab_con_wrap">
+            <div class="tab_con">
+                <!--@loop(list)-->
+                <div class="mypage_lclist">
+                    <div>
+						<span class="contentinfo1">
+							<strong class="info_title">
+                                <a href="javascript:openViewer('{{list.course_id}}', '{{list.lesson_id}}', '{{list.content_width}}', '{{list.content_height}}')">[{{list.course_nm_conv}}] {{list.chapter}}차시 {{list.lesson_nm_conv}}</a>
+							</strong>
+							<span class="info_date"><span class="label tc_blue">{{list.type_conv}}</span>│{{list.study_time_conv}}</span>
+						</span>
+                        <div class="my_btn_wrap">
+                            <!--@if(list.mobile_block)-->
+                            <nobr>
+                                <button class="my_btn_join" style="width: 100%" onclick="openViewer('{{list.course_id}}', '{{list.lesson_id}}', '{{list.content_width}}', '{{list.content_height}}')">강의실 입장</button>
+                            </nobr>
+                            <!--/if(list.mobile_block)-->
+                            <!--@nif(list.mobile_block)--><button type="button" class="my_btn_join" disabled="disabled" style="background-color: #777777; border-color: #dddddd;">모바일 미지원 과정</button><!--/nif(list.mobile_block)-->
+                        </div>
+                    </div>
+                </div>
+                <!--/loop(list)-->
+                <!--@nif(list)-->
+                <div class="mypage_lclist">현재 진행중인 화상강의가 없습니다.</div>
+                <!--/nif(list)-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function setLabel() {
+    var progresses = { "온라인" : "sky", "집합" : "red", "혼합" : "green" };
+    $(".label").each(function() {
+        var v = $(this).html();
+        $(this).addClass(progresses[v]);
+    });
+}
+addEvent("onload", function() { setLabel(); } );
+
+function openViewer(cid, lid, w, h) {
+    viewer = OpenWindowr('../mypage/viewer.jsp?cid=' + cid + '&lid=' + lid, 'VIEWER', w, h);
+}
+
+</script>

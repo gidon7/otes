@@ -1,0 +1,17 @@
+SMAP
+_user_0insert__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+project/../init.jsp
++ 2 init.jsp
+project/init.jsp
++ 3 user_insert.jsp
+project/user_insert.jsp
+*L
+1#1,49:37
+1#2,5:86
+1#3,63:91
+63#3:154
+*E

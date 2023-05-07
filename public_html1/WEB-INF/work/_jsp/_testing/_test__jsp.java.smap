@@ -1,0 +1,14 @@
+SMAP
+_test__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+testing/init.jsp
++ 2 test.jsp
+testing/test.jsp
+*L
+1#1,23:37
+1#2,41:60
+41#2,2:101
+*E
